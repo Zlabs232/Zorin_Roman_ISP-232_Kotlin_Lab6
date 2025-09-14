@@ -23,4 +23,6 @@ class GuildHero {
         val average = total.toDouble() / members.size
         println("Средний уровень гильдии: ${"%.2f".format(average)}")
     }
+
+    val quest = Quest("Побег из замка", 5,700,"Сложный")
 }

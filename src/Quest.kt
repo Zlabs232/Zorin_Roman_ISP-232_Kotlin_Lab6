@@ -10,4 +10,8 @@ class Quest(
         println("Награда: $reward монет")
         println("Уровень сложности: $difficulty")
     }
+
+    fun isHard(): Boolean {
+        return difficulty.lowercase() == "Сложный"
+    }
 }

@@ -1,12 +1,12 @@
 class Hero(
     val name: String,
-    val gender: String,
-    val role: String,
     var hp: Int,
-    var mp: Int,
-    var level: Int,
-    val element: String
-) {
+    val gender: String = "Мужской",
+    val role: String = "Воин",
+    var mp: Int = 50,
+    var level: Int = 1,
+    val element: String = "Огонь")
+    {
     fun sayHello() {
         println("Я — $name, мой путь только начинается!")
     }
@@ -85,5 +85,9 @@ class Hero(
         println("Состояние героев:")
         this.showStats()
         opponent.showStats()
+    }
+
+    fun isAlive(): Boolean {
+        return hp > 0
     }
 }
