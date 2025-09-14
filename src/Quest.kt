@@ -14,4 +14,8 @@ class Quest(
     fun isHard(): Boolean {
         return difficulty.lowercase() == "Сложный"
     }
+
+    fun goldPerHour(): Double {
+        return reward.toDouble() / duration
+    }
 }
