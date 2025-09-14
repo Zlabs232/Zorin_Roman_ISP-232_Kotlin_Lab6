@@ -9,4 +9,9 @@ class Enemy(
         if (hp < 0) hp = 0
         println("Осталось здоровья: $hp")
     }
+
+    fun isStrong(): Boolean {
+        return hp > 100
+    }
 }
+

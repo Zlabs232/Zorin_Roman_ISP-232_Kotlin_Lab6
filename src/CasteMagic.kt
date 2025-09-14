@@ -30,4 +30,10 @@ fun main() {
         symbol = "\uD83C\uDF0A"
     )
     waterStrike.cast()
+
+    val fireball = Spell("Огненный шар", 3, 3, "🔥")
+    val heal = Spell("Исцеление", 2, "❤️")
+
+    println(fireball.description())
+    println(heal.description())
 }

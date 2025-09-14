@@ -29,4 +29,11 @@ fun main() {
 
     naruto.castSpellOn(enemy = orochimaru, spellName = "Расенган", damage = 30)
     naruto.duel(opponent = kakashi)
+
+
+    val enemy1 = Enemy("Дракон", 150, "Огонь")
+    val enemy2 = Enemy("Гоблин", 80, "Земля")
+
+    println("${enemy1.name} сильный: ${enemy1.isStrong()}")
+    println("${enemy2.name} сильный: ${enemy2.isStrong()}")
 }
