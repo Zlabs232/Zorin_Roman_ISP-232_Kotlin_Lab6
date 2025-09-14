@@ -1,3 +1,5 @@
+package characters
+
 class Enemy(
     val name: String,
     var hp: Int,

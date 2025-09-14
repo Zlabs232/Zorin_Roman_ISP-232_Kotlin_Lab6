@@ -1,3 +1,5 @@
+package characters
+
 class Hero(
     val name: String,
     var hp: Int,

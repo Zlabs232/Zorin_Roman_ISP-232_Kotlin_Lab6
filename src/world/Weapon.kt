@@ -1,3 +1,5 @@
+package world
+
 class Weapon(
     var name: String = "Оружие",
     var damage: Int = 10,

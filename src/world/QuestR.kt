@@ -1,3 +1,5 @@
+package world
+
 fun main() {
     val quests = mutableListOf<Quest>()
 

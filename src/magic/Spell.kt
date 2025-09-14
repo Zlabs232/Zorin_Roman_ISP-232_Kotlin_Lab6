@@ -1,3 +1,5 @@
+package magic
+
 class Spell(
     val name: String,
     val width: Int,
@@ -23,4 +25,3 @@ class Spell(
         return "Заклинание $name занимает область ${width}x$height и использует символ $symbol"
     }
 }
-

@@ -1,3 +1,5 @@
+package characters
+
 fun main() {
     val naruto = Hero(
         name = "Наруто",

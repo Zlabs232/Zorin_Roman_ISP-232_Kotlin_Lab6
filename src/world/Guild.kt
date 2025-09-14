@@ -1,3 +1,7 @@
+package world
+
+import characters.Hero
+
 class GuildHero {
     var name: String = ""
     private val members = mutableListOf<Hero>()

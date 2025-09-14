@@ -1,3 +1,5 @@
+package world
+
 class Contract(
     val clientName: String,
     val taskDescription: String,

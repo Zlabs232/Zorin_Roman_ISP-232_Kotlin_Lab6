@@ -1,3 +1,5 @@
+package world
+
 class Quest(
     val title: String,
     val duration: Int,

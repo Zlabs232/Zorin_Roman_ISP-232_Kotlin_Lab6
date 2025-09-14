@@ -1,3 +1,7 @@
+package magic
+
+import magic.Spell
+
 fun main() {
     val fireWall = Spell(
         name = "Огненная Стена",

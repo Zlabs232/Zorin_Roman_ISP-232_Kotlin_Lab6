@@ -1,3 +1,7 @@
+package world
+
+import characters.Hero
+
 fun main() {
     val guild = GuildHero()
     guild.name = "Мопсярки"

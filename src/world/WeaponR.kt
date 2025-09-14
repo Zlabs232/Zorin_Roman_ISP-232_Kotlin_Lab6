@@ -1,3 +1,5 @@
+package world
+
 fun main() {
     val sword = Weapon("Меч", 25, 80, "Острое")
     val bow = Weapon("Лук", 15, 100, "Дальнобойное")
