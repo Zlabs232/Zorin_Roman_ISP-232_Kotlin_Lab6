@@ -1,5 +1,7 @@
 package characters
 
+import magic.Spell
+
 fun main() {
     val naruto = Hero(
         name = "Наруто",
@@ -44,4 +46,12 @@ fun main() {
 
     println("${enemy3.name}: уровень угрозы - ${enemy3.getThreatLevel()}")
     println("${enemy4.name}: уровень угрозы - ${enemy4.getThreatLevel()}")
+
+    val smallSpell = Spell("Расенган", 3, 3, "🌀")
+    val largeSpell = Spell("Большое заклинание", 6, 6, "🔥")
+    val longSpell = Spell("Очень Длинное Заклинания", 2, 2, "⚡")
+
+    println("Наруто может применить ${smallSpell.name}: ${naruto.canCast(smallSpell)}")
+    println("Наруто может применить ${largeSpell.name}: ${naruto.canCast(largeSpell)}")
+    println("Наруто может применить ${longSpell.name}: ${naruto.canCast(longSpell)}")
 }

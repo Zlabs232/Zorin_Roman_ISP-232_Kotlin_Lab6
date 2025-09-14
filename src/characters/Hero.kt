@@ -1,5 +1,7 @@
 package characters
 
+import magic.Spell
+
 class Hero(
     val name: String,
     var hp: Int,
@@ -92,4 +94,11 @@ class Hero(
     fun isAlive(): Boolean {
         return hp > 0
     }
+
+    fun canCast(spell: Spell): Boolean {
+        val nameLengthCondition = spell.name.length <= level * 2
+        val sizeCondition = spell.width <= 5 && spell.height <= 5
+        return nameLengthCondition && sizeCondition
+    }
+
 }
