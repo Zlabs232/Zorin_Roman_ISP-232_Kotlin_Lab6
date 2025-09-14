@@ -13,5 +13,13 @@ class Enemy(
     fun isStrong(): Boolean {
         return hp > 100
     }
-}
 
+    fun getThreatLevel(): String {
+        if (hp < 0) return "НЕкорректное здоровье"
+        return when {
+            hp <= 50 -> "Низкий"
+            hp <= 150 -> "Средний"
+            else -> "Высокий"
+        }
+    }
+}

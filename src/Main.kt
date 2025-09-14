@@ -36,4 +36,10 @@ fun main() {
 
     println("${enemy1.name} сильный: ${enemy1.isStrong()}")
     println("${enemy2.name} сильный: ${enemy2.isStrong()}")
+
+    val enemy3 = Enemy("Дракон", 200, "Огонь")
+    val enemy4 = Enemy("Призрак", -10, "Тьма")
+
+    println("${enemy3.name}: уровень угрозы - ${enemy3.getThreatLevel()}")
+    println("${enemy4.name}: уровень угрозы - ${enemy4.getThreatLevel()}")
 }
