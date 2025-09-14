@@ -1,12 +1,12 @@
-class Hero {
-    var name: String = "Неизвестный"
-    var gender: String = "Не указан"
-    var role: String = "Бродяга"
-    var hp: Int = 100
-    var mp: Int = 50
-    var level: Int = 1
-    var element: String = "Обычный"
-
+class Hero(
+    val name: String,
+    val gender: String,
+    val role: String,
+    var hp: Int,
+    var mp: Int,
+    var level: Int,
+    val element: String
+) {
     fun sayHello() {
         println("Я — $name, мой путь только начинается!")
     }
@@ -60,15 +60,15 @@ class Hero {
     fun castSpellOn(enemy: Enemy, spellName: String, damage: Int) {
         println("$name применяет заклинание '$spellName' на врага ${enemy.name}!")
 
-        if(element == enemy.element){
+        if (element == enemy.element) {
             println("Стихии совпадают! Урон снижен")
             val finalDamage = damage / 2
             enemy.takeDamage(finalDamage)
-        } else{
+        } else {
             enemy.takeDamage(damage)
         }
         mp -= 10
-        if(mp < 0) mp = 0
+        if (mp < 0) mp = 0
         println("Осталось маны: $mp")
     }
 

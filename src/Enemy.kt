@@ -1,8 +1,8 @@
-class Enemy {
-    var name: String = "Враг"
-    var hp: Int = 50
-    var element: String = "Огонь"
-
+class Enemy(
+    val name: String,
+    var hp: Int,
+    val element: String
+) {
     fun takeDamage(amount: Int) {
         println("$name получает $amount урона!")
         hp -= amount
