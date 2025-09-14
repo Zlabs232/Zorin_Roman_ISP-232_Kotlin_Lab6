@@ -3,10 +3,10 @@ fun main() {
         name = "Наруто",
         gender = "мужской",
         role = "Шиноби",
-        level = 5,
-        element = "Ветер",
         hp = 150,
-        mp = 200
+        mp = 200,
+        level = 5,
+        element = "Ветер"
     )
     naruto.showStats()
 
@@ -14,10 +14,10 @@ fun main() {
         name = "Какаши",
         gender = "мужской",
         role = "Шиноби",
-        level = 15,
-        element = "Молния",
         hp = 250,
-        mp = 300
+        mp = 300,
+        level = 15,
+        element = "Молния"
     )
     kakashi.showStats()
 

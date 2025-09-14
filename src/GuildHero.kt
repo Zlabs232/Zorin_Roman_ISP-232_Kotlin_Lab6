@@ -1,27 +1,41 @@
-class GuildHero {
-    var name: String = "Гильдия"
-    var members: MutableList<Hero> = mutableListOf()
+fun main() {
+    val guild = GuildHero()
+    guild.name = "Мопсярки"
 
-    fun addMember(hero: Hero) {
-        members.add(hero)
-        println("Герой ${hero.name} присоединился к гильдии $name!")
-    }
+    val hero1 = Hero(
+        name = "Чмо",
+        gender = "",
+        role = "Воин",
+        hp = 120,
+        mp = 30,
+        level = 5,
+        element = ""
+    )
 
-    fun showMembers() {
-        println("=== Члены гильдии $name ===")
-        if (members.isEmpty()) {
-            println("В гильдии пока нет членов")
-        } else {
-            for (hero in members) {
-                hero.showStats()
-            }
-        }
-        println()
-    }
+    val hero2 = Hero(
+        name = "Чухан",
+        gender = "",
+        role = "Маг",
+        hp = 80,
+        mp = 100,
+        level = 8,
+        element = ""
+    )
 
-    fun averageLevel() {
-        val totalLevel = members.sumOf { it.level }
-        val average = totalLevel.toDouble() / members.size
-        println("Средний уровень гильдии $name: ${"%.1f".format(average)}")
-    }
+    val hero3 = Hero(
+        name = "Водолаз",
+        gender = "",
+        role = "Лучник",
+        hp = 90,
+        mp = 60,
+        level = 6,
+        element = ""
+    )
+
+    guild.addMember(hero1)
+    guild.addMember(hero2)
+    guild.addMember(hero3)
+
+    guild.showMembers()
+    guild.averageLevel()
 }
