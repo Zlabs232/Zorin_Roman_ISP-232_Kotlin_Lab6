@@ -3,7 +3,8 @@ package characters
 class Enemy(
     val name: String,
     var hp: Int,
-    val element: String
+    val element: String,
+    val aggressionLevel: Int = 2
 ) {
     fun takeDamage(amount: Int) {
         println("$name получает $amount урона!")
@@ -23,5 +24,9 @@ class Enemy(
             hp <= 150 -> "Средний"
             else -> "Высокий"
         }
+    }
+
+    fun calculatePower(): Int {
+        return hp * aggressionLevel
     }
 }

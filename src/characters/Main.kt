@@ -54,4 +54,8 @@ fun main() {
     println("Наруто может применить ${smallSpell.name}: ${naruto.canCast(smallSpell)}")
     println("Наруто может применить ${largeSpell.name}: ${naruto.canCast(largeSpell)}")
     println("Наруто может применить ${longSpell.name}: ${naruto.canCast(longSpell)}")
+
+    println("${enemy1.name}: сила = ${enemy1.calculatePower()}")
+    println("${enemy2.name}: сила = ${enemy2.calculatePower()}")
+    println("${enemy3.name}: сила = ${enemy3.calculatePower()}")
 }
